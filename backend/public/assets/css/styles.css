@@ -547,8 +547,24 @@ video {
   }
 }
 
+.flex {
+  display: flex;
+}
+
 .table {
   display: table;
+}
+
+.grid {
+  display: grid;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .bg-green-800 {

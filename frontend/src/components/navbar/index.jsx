@@ -1,11 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav>
-      <ul>
-        <li className="uppercase text-red-500">
+      <ul className="">
+        <li className=" uppercase text-red-500">
           <Link to={`/`}>Accueil</Link>
         </li>
         <li>
@@ -13,8 +13,13 @@ export const Navbar = () => {
         </li>
         <li>
           <Link to={`/products`}>Produits</Link>
+        </li>        
+        <li>
+          <Link to={`/logout`}>Disconnect</Link>
         </li>
       </ul>
     </nav>
   );
 };
+
+export default Navbar;

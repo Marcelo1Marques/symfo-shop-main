@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
-import { Navbar } from "../../components/navbar";
 import axios from "axios";
+import process from "process";
+import Navbar from "../../components/navbar/index"
 
 const URL = "https://jsonplaceholder.typicode.com/posts/";
 
@@ -38,11 +39,6 @@ export const Home = () => {
   return (
     <>
       <Navbar />
-      <p className="bg-green-800">sdqsdqsd</p>
-      <h2 className="bg-red-900 italic uppercase font-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat sit quam ipsa doloribus sed corporis harum repellendus dolorum ullam recusandae, veniam dicta voluptatibus iusto blanditiis, similique ut id quod veritatis!</h2>
-      <button>
-        <a href="/logout"> Disconnect</a> 
-      </button>
     </>
   );
 };
